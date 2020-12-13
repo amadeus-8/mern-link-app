@@ -50,7 +50,7 @@ router.post('/register',
 router.post('/login',
     [
         check('email', 'Введите корректный email').normalizeEmail().isEmail(),
-        check('passwrod', 'Введите пароль').exists()
+        check('password', 'Введите пароль').exists()
     ],
     async (req, res) => {
         try {
