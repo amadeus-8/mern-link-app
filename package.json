@@ -1,0 +1,35 @@
+{
+  "name": "mern-link-app",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amadeus-8/mern-link-app.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Alikhan <amadeus-8@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amadeus-8/mern-link-app/issues"
+  },
+  "homepage": "https://github.com/amadeus-8/mern-link-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "mongoose": "^5.11.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
