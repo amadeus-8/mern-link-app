@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "jwtSecret": "jwt secret key mern app",
-  "mongoUri": "mongodb+srv://amadeus:Qwerty23@cluster0.64xid.mongodb.net/App?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://amadeus:Qwerty23@cluster0.64xid.mongodb.net/App?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
 }
