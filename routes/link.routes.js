@@ -5,10 +5,10 @@ const config = require('config')
 const shortid = require('shortid')
 const router = Router()
 
-/* /api/auth/register */
+/* /api/link/generate */
 router.post('/generate', auth, async (req, res) => {
         try {
-            const baseUrl = config.get('vaseUrl')
+            const baseUrl = config.get('baseUrl')
             const { from } = req.body
 
             const code = shortid.generate()
@@ -36,7 +36,7 @@ router.post('/generate', auth, async (req, res) => {
     }
 )
 
-/* /api/auth/login */
+/* /api/link */
 router.get('/', auth, async (req, res) => {
         try {
             const links = await Link.find( { owner: req.user.userId })
@@ -49,6 +49,7 @@ router.get('/', auth, async (req, res) => {
     }
 )
 
+/* /api/link/id */
 router.get('/:id', auth, async (req, res) => {
         try {
             const link = await Link.findById(req.params.id)
